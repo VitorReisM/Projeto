@@ -15,7 +15,24 @@
 
 Auth::routes();
 
-
-Route::get('/', function(){
-    return view('home');
+Route::get("/test",function (){
+    return view("singlenews_singleimg");
 });
+
+/**
+ * Home
+ */
+Route::get('/', "HomeController@index");
+
+
+/**
+ * News
+ */
+Route::get("/News/Create","NoticiaController@create");
+Route::post("/News/Store","NoticiaController@store");
+
+Route::get("/News/Edit/{id}","NoticiaController@Edit");
+Route::post("/News/Update/{id}","NoticiaController@Update");
+
+Route::get("/News/Delete/{id}","NoticiaController@create");
+Route::post("/News/Destroy/{id}","NoticiaController@create");

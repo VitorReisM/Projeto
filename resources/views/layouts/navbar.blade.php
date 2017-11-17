@@ -1,29 +1,27 @@
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-light navbar-expand-md bg-light justify-content-between">
+  <a href="/" class="navbar-brand">Nome Website</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">Navbar</a>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar2">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Noticias<span class="sr-only">Home</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="{{url("/News/Create/")}}">Create News</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">Something else :)</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+    </ul>
+    <div>{{--placeholder to evenly space flexbox items and center links--}}</div>
+    <ul class="nav navbar-nav flex-row">
+      <li class="nav-item">
+
+        <a class="nav-link button_to_link" type="" href="{{url("/login")}}"  style="display:inline-block">Login </a>/<a class="nav-link button_to_link" href="{{url("/register")}}"  style="display:inline-block"> Register</a>
       </li>
     </ul>
   </div>
 </nav>
+

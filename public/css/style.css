@@ -1,0 +1,209 @@
+* { box-sizing: border-box; }
+
+/* force scrollbar, prevents initial gap */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ---- grid ---- */
+
+.grid {
+}
+
+/* clear fix */
+.grid:after {
+    content: '';
+    clear: both;
+}
+
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width */
+.grid-item,
+.grid-sizer {
+    width: 20%;
+    margin-bottom: 5%;
+    margin-right: 10px;
+}
+
+.grid-item {
+    float: left;
+    border-color: hsla(0, 0%, 0%, 0.7);
+    margin-bottom: 5%;
+    margin-right: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.grid-item--width2 { width: 40%; }
+.grid-item--height2 { height: 200px; }
+
+
+
+
+
+
+
+/* Login */
+
+
+ol {
+    text-align: left;
+}
+
+li {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:black;
+    font-size: 14px;
+}
+
+
+legend{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:black;
+    font-size: 24px;
+}
+
+label{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:black;
+    font-size: 18px;
+}
+
+p{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:black;
+    font-size: 12px;
+}
+
+
+
+input::placeholder {
+    color: grey;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+}
+
+fieldset {
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.loginbutton {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.loginbutton:hover {background-color: #3e8e41}
+
+.loginbutton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.signupbutton {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.signupbutton:hover {background-color: #3e8e41}
+
+.signupbutton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {float:left;width:50%}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+.button_to_link {
+    background:none!important;
+    color:inherit;
+    border:none;
+    padding:0!important;
+    font: inherit;
+    /*border is optional*/
+    border-bottom:0px solid #444;
+    cursor: pointer;
+    text-decoration: none;
+}
